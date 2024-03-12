@@ -1,0 +1,145 @@
+.home-main {
+  /* background-image: url(../images/left-green-blue.png); */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  
+  height: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.home-main span {
+  color: var(--green);
+}
+
+.home-header {
+  margin: 10px 0 20px 0;
+
+  align-content: center;
+}
+
+.home-title h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.home-logo {
+  text-align: center;
+}
+
+.home-logo img {
+  height: 4rem;
+}
+
+.home-tagline {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.home-tagline h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.intro-text {
+  padding: 20px 40px;
+}
+
+.home-p {
+  text-align: left;
+  font-weight: normal;
+  line-height: 1.5;
+  border: solid var(--dark-blue) 2px;
+  border-radius: 10px;
+  margin: 20px 50px;
+  padding: 25px 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 18px;
+  background-color: var(--white);
+}
+.home-p2 {
+  text-align: center;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.home-h3 {
+  text-align: left;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+}
+
+.home-footer {
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.5;
+  font-size: 16px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.home-references {
+  margin-left: 40px;
+}
+
+.home-references a {
+  font-size: small;
+  color: var(--dark-blue);
+}
+
+.footprint-average {
+  align-items: flex-end;
+}
+.graph h2,
+.calculations h2 {
+  font-size: 1.5rem;
+}
+
+.login-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.login-btn button {
+  /* border: var(--dark-blue) solid 0.05rem; */
+  border: none;
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.login-btn button:hover {
+  background-color: var(--dark-blue);
+}
+
+.subtitle {
+  padding: 10px 40px;
+}
+
+.subtitle h2 {
+  margin: 20px 20px 0 20px;
+  font-size: 30px;
+}
+
+.chart-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+.chart {
+  flex: 40%;
+  border: solid var(--dark-blue) 2px;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 15px;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

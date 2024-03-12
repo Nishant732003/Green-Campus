@@ -1,0 +1,37 @@
+/* New css */
+/* .bgHome::before{
+  background: url('../../../assets/images/bg-home.jpg') center ;
+  background-size: cover;
+  content: "";
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: .95;
+} */
+.bgHome{
+    background: url('../../../assets/images/bg-home.jpg') center ;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: .95;
+  }
+  .main::before{
+    background: url('../assets/background5.jpg') center ;
+    background-size: cover;
+    content: "";
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: .95;
+    
+  }

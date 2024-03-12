@@ -1,0 +1,135 @@
+.my-pledges-main {
+  background-image: url(../images/bottom-wave-blue.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px 40px;
+}
+
+.original {
+  height: 80vh;
+}
+
+.xsmall {
+  height: 115vh;
+}
+
+.small {
+  height: 150vh;
+}
+
+.medium {
+  height: 195vh;
+}
+
+.tall {
+  height: 240vh;
+}
+
+.my-pledges-main-title {
+  margin: 20px;
+  font-size: 40px;
+}
+
+.my-pledges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.my-pledge {
+  border: solid 2px var(--dark-blue);
+  border-radius: 10px;
+  margin: 15px 20px;
+  flex: 25%;
+  flex-grow: inherit;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 25px 15px;
+  background-color: var(--white);
+  position: relative;
+}
+
+.delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.my-pledge-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.my-pledge-btn {
+  background-color: var(--dark-blue);
+  border: none;
+  color: var(--white);
+  margin-top: 10px;
+}
+
+.my-pledge-btn:hover {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+}
+
+.my-pledge a {
+  color: var(--dark-blue);
+}
+
+.btn-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.btn-link button {
+  border: var(--dark-blue) solid 2px;
+}
+
+.btn-link button:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.add-btn {
+  margin: 20px;
+}
+
+.add-btn button {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.confetti-div {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+}
+
+.pledge-login-btn {
+  border: var(--dark-blue) solid 2px;
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 930px) {
+  .my-pledge {
+    flex: 40%;
+    flex-grow: inherit;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .my-pledges {
+    flex-direction: column;
+    flex: 100%;
+    align-items: center;
+  }
+}

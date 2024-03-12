@@ -1,0 +1,87 @@
+.my-footprint {
+  padding: 10px 20px;
+}
+
+.footprint-data {
+  margin: 20px;
+  display: flex;flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footprint-data {
+  margin: 20px;
+  display: flex;flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footprint-title-avarage{
+  font-size: 2rem;
+  padding-bottom: 20px;
+  margin-top: 5rem;
+}
+.bold{
+ font-weight: bold;
+}
+.calculations {
+  margin: 20px;
+  flex: 40%;
+  border: solid var(--dark-blue) 2px;
+  border-radius: 10px;
+  padding: 25px;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.left{
+  width: 50%;
+}
+
+.right{
+  width: 50%;
+}
+
+.footprint-title {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+.total {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.graph {
+  /* flex: 40%; */
+  border: solid var(--dark-blue) 2px;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 25px;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.no-info-title {
+  margin: 20px;
+  font-size: 2rem;
+}
+
+.not-logged-in {
+  background-image: url(../images/right-wave-green.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  padding: 10px 40px;
+}
+
+.not-logged-in button {
+  margin: 20px;
+  border: var(--dark-blue) 2px solid;
+}
+
+.not-logged-in button:hover {
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+}

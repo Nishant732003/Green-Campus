@@ -1,0 +1,96 @@
+.pledge-main {
+    background-image: url(../../assets/images/bottom-wave-blue.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    background-repeat: no-repeat;
+    padding: 20px 40px;
+  }
+  
+  .pledge-main h2 {
+    font-size: 30px;
+    margin: 20px;
+  }
+  
+  .pledge-info {
+    margin: 0 20px;
+  }
+  
+  .pledge-data {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    list-style: none;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: end; /* Align items at the end (bottom) of the container */
+  }
+  
+  .pledge {
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-left: 30px;
+    background: repeating-linear-gradient(#0000 0 calc(1.2rem - 1px)) right bottom / 100% 100%, linear-gradient(red 0 0) 30px 0 / 2px 100% #fff;
+    background-repeat: no-repeat;
+    line-height: 1.2rem;
+    -webkit-mask: radial-gradient(circle .8rem at 2px 50%, #0000 98%, #000)0 0 / 100% 2.4rem;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+  }
+  
+  .pledge-title {
+    font-size: 20px;
+    margin: 10px;
+    color: #66afe1;
+  }
+  
+  .pledge p {
+    padding-left: 15px;
+    font-size: 1.2rem;
+    font-weight: 500px;
+  }
+  
+  .pledge a {
+    color: blueviolet;
+    margin-left: 15px;
+    font-size: 18px;
+  }
+  
+  .pledge-btn {
+    background-color: lightskyblue;
+    border: none;
+    color: var(--white);
+    margin: 10px;
+  }
+  
+  .pledge-btn:hover {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+  }
+  
+  .goto-pledge-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .goto-pledge-btn button {
+    color: var(--white);
+    background-color: var(--dark-blue);
+    border: none;
+  }
+  
+  .goto-pledge-btn button:hover {
+    color: var(--dark-blue);
+    background-color: var(--light-blue);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .pledge-data {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }

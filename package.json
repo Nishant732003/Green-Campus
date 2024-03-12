@@ -1,0 +1,23 @@
+{
+  "name": "green-campus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubham-gravitii/green-campus.git"
+  },
+  "author": "Shubham Joshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubham-gravitii/green-campus/issues"
+  },
+  "homepage": "https://github.com/shubham-gravitii/green-campus#readme"
+}

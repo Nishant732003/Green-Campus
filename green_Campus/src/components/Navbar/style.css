@@ -1,0 +1,122 @@
+.navBar {
+  /* height: 40px; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  padding: 10px 10px;
+  /* background-color: var(--white); */
+  z-index: 3;
+  background-color: #000000c1;
+}
+
+.navLogo {
+  height: 50px;
+}
+
+.menuNav {
+  margin-left: auto;
+  background-color: var(--white);
+}
+/* .smll-50 {
+  height: 50%;
+}
+.lgg-50 {
+}
+.bgColor {
+  background-color: rgb(47, 47, 47);
+} */
+.menuNav ul {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  flex-direction: column;
+  display: none;
+  list-style: none;
+}
+
+.menuNav.expanded ul {
+  
+  display: block;
+  color: white;
+  width: 300px;
+  /* background-image: url(../../pages/assets/images/bottom-wave-blue.png); */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh);
+  /* background-color: var(--white); */
+}
+ul a li {
+  border: 2px solid transparent;
+}
+ul a li:hover {
+  border: 2px solid white;
+}
+/* .menu-icon-open::after {
+  content: url("https://api.iconify.design/charm/menu-hamburger.svg?color=%23243b4a&width=45&height=40");
+}
+
+.menu-icon-close::after {
+  content: url("https://api.iconify.design/bi/x-lg.svg?color=%23243b4a&width=45&height=40");
+} */
+
+.menuNav li {
+  text-align: center;
+  font-size: 28px;
+  padding: 0.8rem;
+  color: var(--dark-blue);
+}
+
+.menuNav a {
+  color: var(--dark-blue);
+  text-decoration: none;
+}
+
+.menuNav li:hover {
+  background-color: var(--light-blue);
+}
+
+
+
+@media screen and (max-width: 1100px) {
+  .menuNav.expanded ul {
+    height: 400vh;
+  }
+}
+.glass-effect {
+  /* background: rgba(0,0,0,0.8);
+   */
+  background: rgb(47, 47, 47);
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .glass-effect {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(50px);
+  }
+}
+.sidebarParent {
+ position: absolute;
+ right: 10px;
+ background-color: #b6c8d9;
+ top: 10px;
+  /* background-color: white; */
+}
+.sideImg{
+  height: 40px;
+  width: 40px;
+  /* display: flex; */
+  
+}
+.hamburger {
+  justify-self: end;;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  /* position: absolute; */
+  top: 0;
+  right: 0;
+  /* z-index: 10; */
+}

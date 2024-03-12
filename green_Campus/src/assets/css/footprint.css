@@ -1,0 +1,241 @@
+
+ :root {
+  --clr-primary: hsl(20, 80%, 60%);
+  --clr-primary-hover: hsl(20, 80%, 65%);
+  --transition: 0.5s ease;
+}
+.my-footprint {
+  padding: 10px 20px;
+}
+
+.footprint-data {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footprint-title-avarage{
+  font-size: 2rem;
+  padding-bottom:0px;
+  margin-top: 5rem;
+}
+.bold{
+ font-weight: bold;
+}
+
+.hoverbox{
+  position: relative;
+    background: hsla(220, 10%, 20%, 0.9);
+    padding: 12px 16px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: 0.35s ease-in;
+    margin-top: 20px;
+  
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: auto;
+      right: 0;
+      width: 0%;
+      height: 0.35rem;
+      background: var(--clr-primary);
+      transition: var(--transition);
+    }
+  
+  
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 1rem;
+      font-weight: 300;
+      padding: 0;
+    }
+  
+    a {
+      position: relative;
+      color: #fff;
+      text-decoration: unset;
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      transition: color 0.35s;
+  
+      &:after {
+        content: ">";
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1rem;
+        border: 2px solid #fff5;
+        border-radius: 50%;
+        width: 1.5rem;
+        height: 1.5rem;
+        transition: all 0.35s, color 0s;
+      }
+  
+      &:before {
+        content: "";
+        position: absolute;
+        width: 0rem;
+        height: 0.125rem;
+        background: #fff;
+        right: 0.75rem;
+        top: calc(50% - 0.025rem);
+        transition: 0.35s;
+      }
+    }
+  
+    &:hover {
+      background: hsla(220, 20%, 20%, 0.75);
+      box-shadow: 0px 16px 24px rgba(0, 15, 0, 0.1);
+  
+      &:after {
+        width: 100%;
+        left: 0;
+        right: auto;
+      }
+  
+      & a:after {
+        border-color: transparent;
+        margin-left: 2rem;
+        transition: all 0.35s, color 0s;
+      }
+  
+      & a:before {
+        width: 1.5rem;
+        background: var(--clr-primary);
+      }
+  
+      & a {
+        color: var(--clr-primary);
+  
+        &:hover {
+          color: var(--clr-primary-hover);
+  
+          &:before {
+            background: var(--clr-primary-hover);
+          }
+        }
+      }
+  
+     
+    }
+}
+/* .left{
+  width: 50%;
+}
+.right{
+  width: 50%;
+} */
+
+.footprint-title {
+  font-size: 2rem;
+  padding-bottom: 20px;
+  margin-top:20px;
+  color: #fff;
+}
+
+.total {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.graph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 35%;
+  border: solid var(--dark-blue) 2px;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 2px;
+   background: hsla(220, 10%, 20%, 0.9); 
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+
+.graph1 {
+  flex: 70%;
+  border: solid var(--dark-blue) 2px;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 25px;
+  background-color: var(--white);
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.no-info-title {
+  margin: 20px;
+  font-size: 2rem;
+}
+
+.not-logged-in {
+  /* background-image: url(../images/right-wave-green.png); */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  padding: 10px 40px;
+}
+
+.not-logged-in button {
+  margin: 20px;
+  border: var(--dark-blue) 2px solid;
+}
+
+.not-logged-in button:hover {
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+}
+
+.red{
+  font-size:larger;
+  font-weight: bold;
+  color: red;
+}
+
+.green{
+  font-size:larger;
+  font-weight: bold;
+  color: #06ea06;
+}
+
+
+.dash {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .footprint-data {
+    flex-direction: column;
+    align-items: center;
+  }
+
+   .hoverbox {
+    width: 100%;
+  }
+
+  .graph,
+  .graph1 {
+    width: 100%;
+    margin: 15px 0;
+  }
+}

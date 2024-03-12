@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.spacing1{
+  height: 60px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* No Match Page */
+
+.no-match {
+  /* background-image: url(./pages/assets/images/bottom-wave-blue.png); */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.no-match p {
+  padding: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+:root {
+  --white: #f7f7ff;
+  --light-blue: #bdd5ea;
+  --dark-blue: #243b4a;
+  --green: #566e3d;
+  --brown: #7a4419;
+  --light-brown: #baa898;
+}
+
+body,
+html {
+  height: 100vh;
+  margin: 0;
+  color: var(--dark-blue);
+  background-color: var(--white);
+}
+
+.root {
+  height: 100vh;
+}
+
+button {
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* No Match Page */
+
+.no-match {
+  /* background-image: url(./pages/assets/images/bottom-wave-blue.png); */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.no-match p {
+  padding: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
